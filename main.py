@@ -1,2 +1,2 @@
-print("hello")
-p
+def salom():
+    pass
