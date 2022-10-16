@@ -81,4 +81,3 @@ def get_channel_id():
         return channels_list
         print(x)
     db.close()
-print(del_channel_id(5566))
