@@ -22,6 +22,8 @@ def del_user_id(user_id):
         db.commit()
     except Exception as x:
         print(x)
+    finally:
+        db.close()
 def get_users_list():
     db = sqlite3.connect("datas.db")
     cursor = db.cursor()
@@ -66,6 +68,8 @@ def del_channel_id(channel_id):
         return "Kanal o'chirildi"
     except Exception as x:
         return "Xatolik yuz berdi"
+    finally:
+        db.close()
 
 def get_channel_id():
     db = sqlite3.connect("datas.db")
